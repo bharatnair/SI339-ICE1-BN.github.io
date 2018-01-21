@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ICE ONE - SI 339 - BNAIR</title>
+</head>
+<body>
+	<header>
+		<h1>In-Class Exercise One (ICE 1) - SI 339 W18</h1>
+		<h2>Bharat Nair</h2>
+		<nav>
+			<ul>
+				<li><a href="http://www.sujikim.github.io/">Suji Kim's ICE 1</a></li>
+			</ul>	
+		</nav>		
+	<br>	
+	</header>
+	<img src="http://www.dccomics.com/sites/default/files/ComicsGallery_DC_20171213__MisterMiracle_5_5a31ab0b2722a9.96258136.jpg" height="480" alt="Scott Free and Big Barda on the beach - Mister Miracle (2017) #5 Cover - Drawn by Nick Derington">
+	<img src="https://d2lzb5v10mb0lj.cloudfront.net/covers/600/26/26733.jpg" height="480" alt="Black Hammer (2016) #5 Cover — Drawn by Dean Ormston">
+	<img src="images/sketchUno.jpg" height="240" alt="First sketch of this site">
+	<img src="images/sketchDos.jpg" height="240" alt="Second sketch of this site">
+	
+	<br>
+	<div>
+		<p>This paragraph answers some of the questions asked on the ICE 1 requirements sheet.</p>
+		<ol>
+			<li value="2">In my initial rough version of the code, I had placed the ol tag within the li tag instead of the other way around. I only discovered this when I opened my html file in Chrome which treats this case differently than Safari, which is my normal browser. Also Safari doesn't support the Date type in the input tag.</li>
+			<li value="3">In the initial form code, clicking the text next to the field would do nothing (other than the Date field). So, to allow the text next to the particular field to select/focus the said field, one has to use the label tag and make sure it has the same id as the appropos input field.</li>
+			<li value="6">Yes. One main issue being this very list. Apparently, lists cannot be children to a paragraph parent, given that the paragraph in html is a structural concept not a logical one. So, I instead used the div tag to logically "group" the paragraph and list elements together (I did for my own internal structure, and also because div seemed appropriate because it seems to have no strict semantic or structural meaning. Note: please correct me if I've wrongly understood the point of the div tag.)</li>
+		</ol>
+	</div>
+	
+	<p>Some hipsum for you lads. Scenester la croix tote bag authentic cray, skateboard godard poutine semiotics. Succulents paleo marfa sartorial XOXO keffiyeh hashtag. Etsy plaid activated charcoal bicycle rights, pug heirloom thundercats hammock asymmetrical flexitarian. Ennui everyday carry roof party, pop-up vaporware tbh mixtape fam activated charcoal swag taiyaki readymade authentic knausgaard.</p>
+
+	<form>
+
+		<label for="name">Name:</label>
+		<input type="text" name="name" id = "name"><br>
+		<!-- 
+		Interesting Tidbit: you can use the "autofocus attribute in the input tag such that that particular field will be in focus automatically when the page loads. Example of above name input tag:
+		<input type="text" name="name" id = "name" autofocus><br>
+		-->
+		<label for="dob">DOB:</label>
+		<input type="date" name="DOB"  id = "dob"><br>
+
+		Please enter your choice of snack:<br>
+		
+		<input type="radio" name="snack" value="pizza" id="pizza">
+		<label for="pizza">Pizza</label>
+		<br>
+  		
+  		<input type="radio" name="snack" value="donut" id="donut">
+  		<label for="donut">Donut</label>
+		<br>
+  		
+  		<input type="radio" name="snack" value="vegan" id="vegan"> 
+		<label for="vegan">Vegan Stuff</label>
+		<br>
+
+  		Please enter your choice of drink:<br>
+		<input type="radio" name="snack" value="coffee" id="coffee">
+		<label for="coffee">Coffee</label>
+		<br>
+
+  		<input type="radio" name="snack" value="tea" id="tea">
+  		<label for="tea">Tea</label>
+		<br>
+  		
+  		<input type="radio" name="snack" value="water" id="water">
+  		<label for="water">Water</label>
+  		<br>
+	
+	</form>
+
+	<br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/QDhdMF0qZI8" allowfullscreen></iframe>
+
+	<br><br>
+	<progress value="40" max="100"></progress>
+	<p><strong>Note:</strong> This will never ever reach one-hundred percent.</p>
+</body>
+</html>
