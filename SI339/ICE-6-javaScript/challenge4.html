@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rozha+One">
 	<title>Challenge 4</title>
     <style>
 
     .errormsg { 
         /*font: Use a cool Google font*/
-        font-family: "slabo";
+        font-family: "Rozha One";
+        font-size: 24px;
     	color:red;
     	display:none;}
 
@@ -16,33 +18,31 @@
     <script type="text/javascript">
     function checkForm(){
     	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+        document.getElementById("nameerrormsg").style.display="none";
+        document.getElementById("addrerrormsg").style.display='none';
+        
+
         var nameCheck = document.getElementById("fullname").value;
         var addrCheck = document.getElementById("streetaddr").value;
 
-        var nError = document.getElementById("nameerrormsg").value;
-        // var aError = document.getElementById("addrerrormsg").value;
 
-        // var em = document.querySelectorAll('.errormsg');
-
-        // console.log(nameCheck[0].value);
-        // console.log(addrCheck[0].value);
+        //I could do what I did below or I could have introduced some sort of check to see if it's empty and then an if statement to return false of check comes out as false 
         
-        // var nnn = nError[0]['style']['display'];
-        // var aaa = aError[0]['style']['display'];
-        
-        // console.log(nError[0]['style']['display']);
-        // console.log(aError[0].value);
-
-        if (nameCheck=="") {
-            console.log("yayaaaa");
-            document.getElementById("nameerrormsg").style.display='block';
-            // nError.style.display='block';
-            // nnn='block';
-            // em.style.display='block';
+        if (nameCheck=="" || addrCheck==""){
+            if (nameCheck=="") {
+                console.log("Error Detected: Name is empty!");
+                document.getElementById("nameerrormsg").style.display='block';
+                // return false;
+            };
+            if (addrCheck=="") {
+                console.log("Error Detected: Address is empty!");
+                document.getElementById("addrerrormsg").style.display='block';
+                // return false;
+            };
             return false;
-        }; 
-        return false;
-    }  
+        }
+    } 
+
     </script>
 </head>
 <body>
