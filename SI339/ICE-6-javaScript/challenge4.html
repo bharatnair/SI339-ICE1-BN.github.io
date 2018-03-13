@@ -7,13 +7,36 @@
 
     .errormsg { 
         /*font: Use a cool Google font*/
+        font-family: "slabo";
     	color:red;
-    	display:none; } 
+    	display:none;}
+
+    # 
     </style>
     
     <script type="text/javascript">
     function checkForm(){
     	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+        var nameCheck = document.querySelectorAll("#fullname");
+        var addrCheck = document.querySelectorAll("#streetaddr");
+
+        var nError = document.querySelectorAll("#nameerrormsg");
+        var aError = document.querySelectorAll("#addrerrormsg");
+
+        // console.log(nameCheck[0].value);
+        // console.log(addrCheck[0].value);
+        
+        var nnn = nError[0]['style']['display'];
+        var aaa = aError[0]['style']['display'];
+        
+        // console.log(nError[0]['style']['display']);
+        // console.log(aError[0].value);
+
+        if (nameCheck[0].value=="") {
+            console.log("yayaaaa");
+            nnn='block';
+            return false;
+        }
     }  
     </script>
 </head>
