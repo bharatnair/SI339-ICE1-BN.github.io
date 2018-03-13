@@ -46,6 +46,12 @@
 			// $('#image').css($(this).attr("src"));
 			$('#image').css('background-image', "url(" + $(this).attr("src") + ")");
 		});
+
+		$('.preview').on('mouseleave', function(){
+			$('#image').text("Hover over an image below.");
+			// $('#image').css($(this).attr("src"));
+			$('#image').css('background-image', "");
+		});
 	});
 	</script>
 </head>
@@ -53,7 +59,7 @@
 <body>
 	<h1>Challenge 5</h1>
 		<div id = "image">
-			Hover over an imadddge below.
+			Hover over an image below.
 		</div>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
