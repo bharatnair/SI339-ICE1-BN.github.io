@@ -42,13 +42,24 @@
 	function upDate(previewPic){
 
 		// console.log("----one----")
-		// console.log(document.getElementById("image").style.backgroundImage);
+		// console.log(document.getElementById("image").style);
 		// console.log("----two----")
 		// console.log(previewPic.src);
 		// document.getElementById("image").style;
 		document.getElementById("image").style.backgroundImage = "url(" + previewPic.src + ")";
+		document.getElementById("image").style.fontFamily = "Comic Sans MS"; //comics sans lol
+		// document.getElementById("image").style.fontSize = "24pt";
+		document.getElementById("image").style.color = "red";
 		
 		// console.log(document.querySelector("div#image").innerText);
+		document.querySelector("div#image").innerText = previewPic.alt;
+	}
+
+	function unDo(previewPic){
+		document.getElementById("image").style.backgroundImage = "";
+		document.querySelector("div#image").innerText = "Hover over an image below.";
+		document.getElementById("image").style.fontFamily = "";
+		document.getElementById("image").style.color = "";
 	}
 
 	</script>
