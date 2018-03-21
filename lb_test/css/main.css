@@ -5,6 +5,13 @@
 	/*visibility: hidden;*/
 }
 
+.backButton {
+	position: absolute;
+	top: 50px;
+	text-align: center;
+	/*visibility: hidden;*/
+}
+
 body {
 	/*background-image: url("ReserveRideScreen.png");*/
 }
