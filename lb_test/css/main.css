@@ -1,0 +1,10 @@
+.tripDetails {
+	position: absolute;
+	top: 150px;
+	text-align: center;
+	/*visibility: hidden;*/
+}
+
+body {
+	/*background-image: url("ReserveRideScreen.png");*/
+}
