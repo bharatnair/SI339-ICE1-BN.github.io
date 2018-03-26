@@ -1,5 +1,11 @@
 /*main.css*/
-p {
+#tagline {
 	font-family: "Avenir Next", 'Comic Sans MS';
-	font-size: 48px;
+	font-size: 36px;
+	text-align: center;
+}
+
+#signoff {
+	font-size: 18px;
+	text-align: center;
 }
