@@ -1,24 +1,46 @@
-/*main.css*/
-#tagline {
-	font-family: "Avenir Next", 'Comic Sans MS';
-	font-size: 36px;
-	text-align: center;
-}
-
-#signoff {
-	font-size: 18px;
-	text-align: center;
-}
-
 body {
 	margin: 0;
 	padding: 0;
 }
 
+header{
+	font-family: 'Avenir Next', sans-serif;
+	font-size: 105%;
+    /*box-shadow: 0px 18px 26px 1px rgba(141, 141, 139, .75);*/
+    width: 100%;
+    position: fixed;
+}
+
+/*#top-nav{
+
+}*/
+
 .top-nav ul{
+	position: absolute;
+	right: 0;
 	list-style-type: none;
 	padding: 0;
-	background-color: #211D24; /*CHANGE*/
+	background-color: #211D24;
 	margin: 0;
-	display: inline-block;
+	display: block;
+}
+
+.top-nav ul li{
+		margin-top: 1%;
+		display: inline-block;
+		text-align: center;
+	}
+
+.top-nav ul li a{
+	font-size: 1em;
+	color: #DDDDDA;
+	text-decoration: none;
+	padding: .5em 1em;
+	/*display: block;*/
+	text-align: center;
+}
+
+.top-nav ul li a.current{
+	color: green;
+	font-size: 24px;
 }
