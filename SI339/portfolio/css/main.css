@@ -9,3 +9,11 @@
 	font-size: 18px;
 	text-align: center;
 }
+
+.top-nav ul{
+	list-style-type: none;
+	padding: 0;
+	background-color: #211D24; /*CHANGE*/
+	margin: 0;
+	display: inline-block;
+}
