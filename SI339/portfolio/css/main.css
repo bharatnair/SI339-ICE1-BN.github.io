@@ -10,6 +10,11 @@
 	text-align: center;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+}
+
 .top-nav ul{
 	list-style-type: none;
 	padding: 0;
