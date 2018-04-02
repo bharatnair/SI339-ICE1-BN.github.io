@@ -1,0 +1,54 @@
+img {
+	margin:0;
+	padding:0;
+}
+
+@media screen and (min-width: 650px){
+	.top-nav ul{
+		text-align: center;
+		background-color: lightgrey;
+	}
+	.top-nav ul li{
+		display: inline-block;
+		text-align: center;
+		border-top: 0;
+	}
+
+	.comics-grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.box1{
+		grid-column: span 2;
+		/*grid-row: auto;*/
+		/*grid-row: span 2;*/
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.logo{
+		/*background-color:none;*/
+		float: left;
+	}
+
+
+	.top-nav ul{
+		text-align: right;
+		border-top: 0;
+	}
+	.top-nav ul li{
+		margin-top: 1%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.comics-grid{
+		display: grid;
+		grid-template-columns:repeat(4, 1fr);
+	}
+
+	.box1{
+		grid-column: span 2;
+	}
+}
