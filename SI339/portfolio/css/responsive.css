@@ -6,12 +6,23 @@ img {
 @media screen and (min-width: 650px){
 	.top-nav ul{
 		text-align: center;
-		background-color: lightgrey;
+		/*background-color: lightgrey;*/
 	}
+
+	.top-nav{
+		background-color: white;
+	}
+
+	.logo {
+		background-color: white;
+	}
+	
 	.top-nav ul li{
 		display: inline-block;
 		text-align: center;
 		border-top: 0;
+		margin-top: 1em;
+		margin-bottom: 1%;
 	}
 
 	.comics-grid{
@@ -24,12 +35,19 @@ img {
 		/*grid-row: auto;*/
 		/*grid-row: span 2;*/
 	}
+
+	.home-flag-comics {
+		max-width: 800px;
+		padding-top: 200px;
+	}
 }
 
 @media screen and (min-width: 1000px){
 	.logo{
-		/*background-color:none;*/
+		background-color:transparent;
 		float: left;
+		padding: 10px;
+		/*background-color: lightgrey;*/
 	}
 
 
@@ -38,7 +56,9 @@ img {
 		border-top: 0;
 	}
 	.top-nav ul li{
-		margin-top: 1%;
+		margin-top: 2em;
+		padding-bottom: 30px;
+		/*margin-bottom: 1%;*/
 		display: inline-block;
 		text-align: center;
 	}
@@ -50,5 +70,10 @@ img {
 
 	.box1{
 		grid-column: span 2;
+	}
+
+	.home-flag-comics {
+		max-width: 1200px;
+		padding-top: 120px;
 	}
 }

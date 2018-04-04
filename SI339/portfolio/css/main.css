@@ -14,25 +14,30 @@ header{
     position: fixed;
 }
 
-footer {
+.footer {
 	font-size: 75%;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	text-align: center;
-	background-color: lightgrey;
+	background-color: black;
+}
+
+.footer p {
+	margin: .5em;
+	color: #ccc;
 }
 
 .logo {
 	/*float: center;*/
 	/*width: 100%;*/
 	text-align: center;
-	margin-top: 10px;
-	margin-left: 10px; 
+	/*margin-top: 10px;*/
+	padding-top: 10px;
 }
 
 .top-nav{
-	background-color: lightgrey;
+	background-color: white;
 }
 
 .top-nav ul{
@@ -48,7 +53,8 @@ footer {
 }
 
 .top-nav ul li{
-		margin-top: 1em;
+		margin-top: .5em;
+		padding-bottom: 2%;
 		/*display: inline-block;*/
 		display: block;
 		text-align: center;
@@ -91,24 +97,28 @@ footer {
 
 }
 
+.home-flag p{
+	padding: 0 1em;
+}
+
 .home-flag-comics {
 	display: flex;
 	flex-direction: column;
-	padding-top: 100px;
+	padding-top: 300px;
 	/*top: 250px;*/
 	/*overflow: none;*/
 
 	display: block;
 	margin: auto;
-	max-width: 1000px;
+	/*max-width: 1200px;*/
 }
 
 .comics-grid-cell{
-	margin-bottom: 2%;
-	margin-left: 2%;
+	margin-bottom: 5%;
+	margin-left: 5%;
 }
 .comics-grid-cell img {
-	width: 98%;
+	width: 95%;
   	display: block;
   	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
 }
