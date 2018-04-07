@@ -114,6 +114,10 @@ header{
 	/*max-width: 1200px;*/
 }
 
+.comics-grid {
+	text-align: center;
+}
+
 .comics-grid-cell{
 	margin-bottom: 5%;
 	margin-left: 5%;
