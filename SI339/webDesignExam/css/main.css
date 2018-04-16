@@ -10,17 +10,19 @@ body {
 
 .image-grid {
 	width: 100%;
-	/*width: 50%;*/
 	display: grid;
-	text-align: center;
-	grid-template-columns:repeat(2, 1fr);
+	grid-template-columns:repeat(4, 1fr);
 }
 
 .image-cell {
 	text-align: center;
-	grid-column: span 1;
+	grid-column: span 2;
 	display: inline-block;
-	/*width: 50%;*/
 	border: 5px solid blue;
 	padding: 5%;
+}
+
+img {
+	width: 100%;
+	text-align: center;
 }

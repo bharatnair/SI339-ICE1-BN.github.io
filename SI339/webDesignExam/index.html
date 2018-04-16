@@ -6,32 +6,32 @@
 
 	<script type="text/javascript">
 		function hideImage(){
-			document.getElementById('chosen-image').style.display='none'
+			document.getElementById('chosen-image-one').style.display='none';
+			document.getElementById('chosen-image-two').style.gridColumn= "2/span 2";
 		}
 
 		function showImage(){
-			document.getElementById('chosen-image').style.display='inline-block'
+			document.getElementById('chosen-image-one').style.display='inline-block';
+			document.getElementById('chosen-image-two').style.gridColumn= "span 2";
 		}
 
 	</script>
 
 	<style type="text/css">
-	
 		body{background: url("images/bg.png");}
-
 	</style>
 
 </head>
 
 <body>
-	<!-- <p class="name-text">Bharat Nair</p> -->
+
 	<h1>Bharat Nair</h1>
 	
 	<div class="image-grid">
-		<div class="image-cell" id="chosen-image"> 
+		<div class="image-cell" id="chosen-image-one"> 
 			<img src="images/examPic.JPG">
 		</div>
-		<div class="image-cell">
+		<div class="image-cell" id="chosen-image-two">
 			<img src="images/UMSI-logo.jpg">
 		</div>
 	</div>
