@@ -1,1 +1,19 @@
-main.css
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.name-text {
+	font-size: 48pt;
+}
+
+.image-grid {
+	width: 100%;
+}
+
+.image-cell {
+	display: inline-block;
+	/*width: 50%;*/
+	border: 5px solid blue;
+	padding: 5%;
+}
