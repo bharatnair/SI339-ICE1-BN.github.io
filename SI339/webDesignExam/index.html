@@ -3,13 +3,32 @@
 <head>
 	<title>Bharat Nair — SI 339 Exam 2</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script type="text/javascript">
+		function hideImage(){
+			document.getElementById('chosen-image').style.display='none'
+		}
+
+		function showImage(){
+			document.getElementById('chosen-image').style.display='inline-block'
+		}
+
+	</script>
+
+	<style type="text/css">
+	
+		body{background: url("images/bg.png");}
+
+	</style>
+
 </head>
+
 <body>
 	<!-- <p class="name-text">Bharat Nair</p> -->
 	<h1>Bharat Nair</h1>
 	
 	<div class="image-grid">
-		<div class="image-cell">
+		<div class="image-cell" id="chosen-image"> 
 			<img src="images/examPic.JPG">
 		</div>
 		<div class="image-cell">
@@ -18,8 +37,8 @@
 	</div>
 
 	<div>
-		<button>Hide Image</button>
-		<button>Show Image</button>
+		<button onclick="hideImage()">Hide Image</button>
+		<button onclick="showImage()">Show Image</button>
 	</div>
 
 </body>

@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	background: url("images/bg.png");
 }
 
 .name-text {
@@ -9,9 +10,15 @@ body {
 
 .image-grid {
 	width: 100%;
+	/*width: 50%;*/
+	display: grid;
+	text-align: center;
+	grid-template-columns:repeat(2, 1fr);
 }
 
 .image-cell {
+	text-align: center;
+	grid-column: span 1;
 	display: inline-block;
 	/*width: 50%;*/
 	border: 5px solid blue;
